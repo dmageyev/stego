@@ -71,7 +71,7 @@ def write_file(filename, content):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(
             description="Zero Width Steganography Tool", 
-            formatter_class=argparse.RawTextHelpFormatter
+            formatter_class=argparse.RawTextHelpFormatter,
             epilog='Encoding:\n\n    python zwsp.py e input.txt output.txt -s "hidden message" -p mypassword\n\n or \n\n' +
                     '    python zwsp.py e input.txt output.txt -f secret.txt -v -p mypassword \n\n' +
                     'Decoding: \n\n python zwsp.py d output.txt -p mypassword')
