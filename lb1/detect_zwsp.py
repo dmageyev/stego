@@ -15,7 +15,7 @@ if __name__ == "__main__":
         text = f.read()
     invisible_chars = ["\u200B", "\u200C", "\u200D", "\uFEFF"]
     if any(char in text for char in invisible_chars):
-        print("!!! Знайдено прихован? символи !!!")
+        print("!!! Hidden symbols found !!!")
     else:
-        print("--- Прихованих символ?в не знайдено ---")
+        print("--- No hidden characters found ---")
         
